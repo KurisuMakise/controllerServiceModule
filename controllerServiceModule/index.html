@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app="Application">
+    <head>
+        <title>ajax</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <!-- MES CONTROLLEURS -->
+        <div ng-controller="PrincipalController">
+            {{hello}}        
+        </div>
+        <hr>
+        <div ng-controller="SecondController">
+            {{hello2}}
+        </div>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+        <script type="text/javascript" src="./app/modules/Math.js"></script>
+        <script type="text/javascript" src="./app/modules/MathLoc.js"></script>
+        <script type="text/javascript" src="./app/modules/Application.js"></script>
+        <script type="text/javascript" src="./app/services/CalculService.js"></script>
+        <script type="text/javascript" src="./app/services/CalculLocService.js"></script>
+        <!--<script type="text/javascript" src="./app/filtres/monFiltre.js"></script>-->
+        <script type="text/javascript" src="./app/controllers/PrincipalController.js"></script>
+        <script type="text/javascript" src="./app/controllers/SecondController.js"></script>
+    </body>
+</html>

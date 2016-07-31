@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app="Application">
+    <head>
+        <title>ajax</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="./css/reset.css">
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+    </head>
+    <body>
+        <!-- MES CONTROLLEURS -->
+        <div ng-controller="principalController">
+            {{hello}}
+            <div ng-controller="secondController">
+                {{$parent.hello}}
+                {{hello|uppercase}}
+                {{autreV}}
+                {{54552.1565|number:2}}
+            </div>
+        </div>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+        <script type="text/javascript" src="./app/modules/Math.js"></script>
+        <script type="text/javascript" src="./app/modules/Application.js"></script>
+        <script type="text/javascript" src="./app/services/calculService.js"></script>
+        <script type="text/javascript" src="./app/services/monService.js"></script>
+        <script type="text/javascript" src="./app/filtres/monFiltre.js"></script>
+        <script type="text/javascript" src="./app/controllers/principalController.js"></script>
+        <script type="text/javascript" src="./app/controllers/secondController.js"></script>
+    </body>
+</html>
